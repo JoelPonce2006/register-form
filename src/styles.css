@@ -1,140 +1,160 @@
+* {
+  padding: 0px;
+  font-family: Arial;
+  margin: 0;
+}
+
 body {
   background-color: #f2f2f2;
 }
 
-.header-menu {
+.responsive-page-header-container {
   display: flex;
-  gap: 10px;
+  align-items: center;
   justify-content: space-between;
-  padding: 16px 72px;
+  padding: 10px 20px;
 }
 
-.header-texts {
-  display: flex;
-  gap: 26px;
-  color: #343d42;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  list-style-type: none;
-  font-family: Arial, Helvetica, sans-serif;
+.hamburger-button {
+  border: none;
+  background: none;
 }
 
-.header-login-register {
-  display: flex;
+.responsive-page-navigation-container {
+  display: none;
   gap: 24px;
 }
 
-.button-login {
+.navigation-list-item {
+  list-style: none;
+}
+
+.navigation-links {
+  text-decoration: none;
   color: #343d42;
-  width: 116px;
-  height: 50px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.responsive-page-buttons-container {
+  display: none;
+  gap: 24px;
+}
+
+.button {
   border-radius: 6px;
+  outline: none;
+  border: none;
   padding: 14px 34px;
+  font-size: 18px;
+  width: max-content;
+}
+
+.button-white {
   background-color: #ffffff;
-  border-color: #ffffff;
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #343d42;
 }
 
-.button-register {
-  color: #ffffff;
-  width: 140px;
-  height: 50px;
-  border-radius: 6px;
-  padding: 14px 34px;
+.button-purple {
   background-color: #843e71;
-  border-color: #843e71;
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
 }
 
-.body-text {
+.banner-container {
+  padding: 0px 20px;
+}
+
+.banner-text-container {
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  padding: 0px 0px 0px 72px;
+}
+
+.banner-title {
+  color: #343d42;
+  font-weight: 700;
+}
+
+.purple-text {
+  color: #843e71;
+  font-weight: 700;
+}
+
+.banner-text {
+  font-weight: 600;
+}
+
+.banner-image-container {
+  display: flex;
   justify-content: center;
 }
 
-.body-title {
-  color: #843e71;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 76px;
-  margin-bottom: 0;
-  font-family: Arial, Helvetica, sans-serif;
+.banner-image {
+  width: 280px;
+  height: 258.67px;
 }
 
-.body-subtitle {
-  color: #343d42;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 76px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.body-paragraph {
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  size: 18px;
-  line-height: 22px;
-  margin-top: 0;
-}
-
-.body-button {
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  width: 202px;
-  height: 58px;
-  border-radius: 6px;
-  padding: 18px 44px 18px 44px;
-  background-color: #843e71;
-  border: none;
-}
-
-.body-containers {
+.partners-container {
   display: flex;
+  gap: 24px;
+  flex-direction: column;
+  padding: 0px 20px;
 }
 
-.footer-text {
-  display: flex;
-}
-
-.footer-title {
-  display: flex;
-  color: #586166;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 68px;
-  align-items: center;
-  padding: 0px 380px;
+.partners-title {
   text-align: center;
+  color: #586166;
+  font-size: 28px;
 }
 
-.footer-partners {
+.partners-logos-container {
   display: flex;
+  justify-content: center;
 }
 
-.footer-partner {
+.partners-logos {
   display: flex;
-  width: 64px;
-  height: 64px;
-  gap: 64px;
-  padding: 0px 250px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 832px;
 }
 
-.footer-partner-2 {
-  display: flex;
-  width: 64px;
-  height: 64px;
-  gap: 64px;
-  padding: 0px 310px;
+@media (min-width: 768px) {
+  .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-page-header-container {
+    padding: 10px 72px;
+  }
+  .responsive-page-navigation-container {
+    display: flex;
+  }
+  .responsive-page-buttons-container {
+    display: flex;
+  }
+  .banner-container {
+    padding: 0px 72px;
+  }
+  .banner-title {
+    font-size: 50px;
+  }
+  .hamburger-button {
+    display: none;
+  }
+  .banner-image {
+    width: 542.31px;
+    height: 501px;
+  }
+  .partners-title {
+    font-size: 42px;
+  }
+  .partners-container {
+    gap: 40px;
+    padding: 0px 72px;
+  }
 }
